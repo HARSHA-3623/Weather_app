@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.hidden {
+    display: none;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    filter: opacity(90%) brightness(60%) blur(5px);
+}
+
+.content {
+    width: 85%;
+    max-width: 22rem;
+    max-height: 85vh;
+    overflow-y: scroll; /* Enables vertical scroll */
+    overflow-x: hidden; /* Hides horizontal scroll */
+    border: 0.1rem solid whitesmoke;
+    border-radius: 0.8rem;
+    margin: auto;
+    padding: 0.8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.15); /* Transparent background */
+    box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+}
+
+/* Hide scrollbar on Y-axis */
+.content::-webkit-scrollbar {
+    display: none; /* Hides the scrollbar */
+}
+
+.content::-webkit-scrollbar-thumb {
+    background-color: transparent; /* No visible scrollbar thumb */
+}
+
+.input {
+    border: none;
+    background: transparent;
+    color: black;
+    font-size: 1rem;
+    outline: none;
+    width: max-content;
+}
+
+.searchbar {
+    border-radius: 50px;
+    margin: 0.4rem;
+    padding: 0.6rem 1rem;
+    background-color: rgba(245, 245, 245, 0.591);
+    border: 1px solid whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bi-search {
+    cursor: pointer;
+}
+
+.location {
+    margin: 0.6rem 0.4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.6rem 0.4rem;
+    color: whitesmoke;
+    font-size: 1.3rem;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 0.4rem;
+}
+
+.flex {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.svg {
+    width: 6rem;
+    height: 6rem;
+}
+
+.celcius {
+    font-size: 1.2rem; /* Reduced font size */
+    gap: 0.5rem; /* Reduced gap between elements */
+    padding: 0.4rem; /* Reduced padding */
+    margin-top: 0.4rem; /* Reduced margin */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.metrics {
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    color: white;
+    padding: 0.6rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.box {
+    display: flex;
+    gap: 0.6rem;
+    width: max-content;
+    align-items: center;
+}
+
+.bi-droplet-half,
+.bi-wind {
+    font-size: 1.8rem; /* Reduced icon size */
+}
+
+h3 {
+    color: white;
+    margin: 0.4rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.forecast-container {
+    margin: 0.6rem 0.4rem;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    gap: 0.8rem;
+    overflow: scroll;
+}
+
+.forecast-container::-webkit-scrollbar {
+    display: none;
+}
+
+.forecast {
+    border: 0.1rem solid whitesmoke;
+    border-radius: 0.8rem;
+    width: max-content;
+    padding: 0.6rem;
+    text-align: center;
+}
+
+.default-img {
+    width: 16rem;
+    height: 16rem;
+    margin: 0 auto;
+    display: block;
+}
+
+.search-city {
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.dummy {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0.6rem 0.6rem;
+}
